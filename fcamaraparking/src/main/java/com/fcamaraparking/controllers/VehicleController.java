@@ -24,7 +24,7 @@ public class VehicleController {
     public ResponseEntity<VehicleDTO> createVehicle(@RequestBody VehicleForm vehicleForm, UriComponentsBuilder uriComponentsBuilder) {
         VehicleDTO vehicleDTO = vehicleService.createVehicle(vehicleForm);
         URI uri = uriComponentsBuilder.path("/vehicles/{id}").buildAndExpand(vehicleDTO.id()).toUri();
-        return ResponseEntity.ok().body(vehicleDTO);
+        return ResponseEntity.created(uri).body(vehicleDTO);
     }
 
     @GetMapping
