@@ -1,5 +1,6 @@
 package com.fcamaraparking.domain.vehicles;
 
+import com.fcamaraparking.dtos.VehicleForm;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,7 +23,15 @@ public class Vehicle {
     @Column(unique = true)
     private String plate;
     @Enumerated(EnumType.STRING)
-    private VehiclesType vehiclesType;
+    private VehicleType vehicleType;
+
+    public Vehicle(VehicleForm vehicleForm) {
+        this.brand = vehicleForm.brand();
+        this.model = vehicleForm.model();
+        this.color = vehicleForm.color();
+        this.plate = vehicleForm.plate();
+        this.vehicleType = VehicleType.valueOf(vehicleForm.vehicleType());
+    }
 
     @Override
     public final boolean equals(Object o) {

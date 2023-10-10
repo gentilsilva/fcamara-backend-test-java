@@ -1,6 +1,6 @@
 package com.fcamaraparking.domain.vehicles;
 
-public enum VehiclesType {
+public enum VehicleType {
 
     MOTORCYCLE,
     CAR
