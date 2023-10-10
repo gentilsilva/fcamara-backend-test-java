@@ -1,6 +1,6 @@
 
 <details>
-<summary> Informações para realizar o teste FCamara </summary>
+<summary> Informações para realização o teste FCamara </summary>
 
 ### FCamara 
 
@@ -66,7 +66,7 @@ Agradecemos sua participação no teste. Boa sorte! 😄
 
 <details>
 
-<summary> Detalhamento dos desenvolvimento do teste </summary>
+<summary> Detalhamento do desenvolvimento do teste </summary>
 
 # Getting Started
 
