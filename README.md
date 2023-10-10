@@ -1,6 +1,6 @@
 
 <details>
-<summary> Informações para realização o teste FCamara </summary>
+<summary> Informações para realização do teste FCamara </summary>
 
 ### FCamara 
 
