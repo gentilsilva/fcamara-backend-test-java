@@ -21,6 +21,7 @@ public class Vehicle {
     private String color;
     @Column(unique = true)
     private String plate;
+    @Enumerated(EnumType.STRING)
     private VehiclesType vehiclesType;
 
     @Override
